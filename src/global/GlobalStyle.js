@@ -6,4 +6,8 @@ export default createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
+  .width-limit {
+    max-width: 1200px;
+    margin: auto;
+  }
 `;
