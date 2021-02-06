@@ -1,4 +1,6 @@
 import Navbar from "./Navbar";
-import Hero from "./Hero";
-
-export { Navbar, Hero };
+import Welcome from "./Welcome";
+import Sidebar from "./Sidebar";
+import JournalForm from "./JournalForm";
+import Entry from "./Entry";
+export { Navbar, Welcome, Sidebar, JournalForm, Entry };

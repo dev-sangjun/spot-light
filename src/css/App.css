@@ -2,3 +2,13 @@
 .App {
   height: 100vh;
 }
+@media (max-width: 960px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 640px) {
+  html {
+    font-size: 0.7rem;
+  }
+}

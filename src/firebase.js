@@ -1,15 +1,18 @@
 import * as firebase from "firebase";
+import dotenv from "dotenv";
 import "firebase/database";
+
+dotenv.config();
 
 // TODO: ENTER FIREBASE CONFIG
 const firebaseConfig = {
-  apiKey: "AIzaSyBp1fdpne0Y__RWC8K6-VnAELBwZf4DuUY",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "spot-light-66918.firebaseapp.com",
   databaseURL: "https://spot-light-66918.firebaseio.com",
   projectId: "spot-light-66918",
   storageBucket: "spot-light-66918.appspot.com",
-  messagingSenderId: "89111530830",
-  appId: "1:89111530830:web:3e7dfa9c30b54b14cca21f",
+  messagingSenderId: process.env.FIREBASE_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
 };
 firebase.initializeApp(firebaseConfig);
 firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
